@@ -11,23 +11,20 @@ model TaskModel
 
 ui LayerWidget
 {
-    VerticalScrollerWidget {
+    HorizontalScrollerWidget{
         scrollBarDisabled = true
-        LayerWithBackgroundColorWidget container {
+        LayerWithBackgroundColorWidget container{
             color = Color.white()
-            VerticalBoxWidget list {
+            VerticalBoxWidget list{
                 margin = context.getHeightValue("5mm")
                 spacing = context.getHeightValue("5mm")
-
-        
+                TextInputWidget{
+                    placeholder = "ASDASDASD"
+                }
             }
         }
     }
-
-    
 }
-
-
 
 func initializeWidget override
 {
